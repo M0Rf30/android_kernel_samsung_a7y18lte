@@ -171,7 +171,7 @@ dtc_cpp_flags  = -Wp,-MD,$(depfile).pre.tmp -nostdinc                    \
 		 -I$(srctree)/drivers/of/testcase-data                   \
 		 -undef -D__DTS__                                        \
 		 -DANDROID_VERSION=$(ANDROID_VERSION)                    \
-		 -DANDROID_MAJOR_VERSION=$(ANDROID_MAJOR_VERSION)
+		 -DANDROID_MAJOR_VERSION=q
 
 ifeq ($(CONFIG_SEC_FACTORY),y)
 dtc_cpp_flags += -DCONFIG_SEC_FACTORY
